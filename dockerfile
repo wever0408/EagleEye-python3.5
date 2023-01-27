@@ -14,7 +14,7 @@ RUN apt-get update && add-apt-repository -y ppa:deadsnakes/ppa && apt-get update
 RUN curl https://bootstrap.pypa.io/pip/3.5/get-pip.py | python3.5
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y libgtk-3-dev libboost-all-dev build-essential cmake libffi-dev
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y firefox
-RUN git clone https://github.com/ThoughtfulDev/EagleEye-python3.5
+RUN git clone https://github.com/wever0408/EagleEye-python3.5
 WORKDIR EagleEye-python3.5
 RUN pip3.5 install -r requirements.txt
 RUN pip3.5 install --upgrade beautifulsoup4 html5lib spry
